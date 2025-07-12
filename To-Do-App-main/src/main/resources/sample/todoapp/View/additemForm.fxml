@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="381.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.todoapp.Controller.AdditemFormController">
+   <children>
+      <MFXTextField fx:id="taskField" floatMode="DISABLED" layoutX="102.0" layoutY="139.0" prefHeight="36.0" prefWidth="397.0" promptText="Task" />
+      <MFXTextField fx:id="descriptionField" floatMode="DISABLED" layoutX="103.0" layoutY="207.0" prefHeight="49.0" prefWidth="397.0" promptText="Description">
+         <font>
+            <Font size="14.0" />
+         </font></MFXTextField>
+      <MFXButton fx:id="saveTaskButton" layoutX="234.0" layoutY="281.0" prefHeight="36.0" prefWidth="134.0" style="-fx-background-color: #dd2c00;" text="Save Task" textFill="#fdfeff">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </MFXButton>
+      <AnchorPane prefHeight="97.0" prefWidth="600.0" style="-fx-background-color: #757575;">
+         <children>
+            <Label alignment="CENTER" layoutX="218.0" layoutY="31.0" prefHeight="35.0" prefWidth="165.0" text="2DO" textFill="#fdfeff">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label fx:id="successLabel" layoutX="281.0" layoutY="108.0" prefHeight="17.0" prefWidth="269.0" text="Task Added Successfully! Add Another One" textFill="#7c7a7a" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <MFXButton fx:id="todoButton" layoutX="444.0" layoutY="342.0" prefHeight="25.0" prefWidth="148.0" style="-fx-background-color: #FF5252;" text="My 2DO's (3)" visible="false" />
+   </children>
+</AnchorPane>

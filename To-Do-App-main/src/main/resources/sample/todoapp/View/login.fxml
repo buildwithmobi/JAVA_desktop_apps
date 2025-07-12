@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXPasswordField?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #ff5252;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.todoapp.Controller.loginController">
+   <children>
+      <AnchorPane layoutX="-5.0" layoutY="91.0" prefHeight="308.0" prefWidth="706.0" style="-fx-background-color: #FDFEFF;">
+         <children>
+            <Label alignment="CENTER" layoutX="240.0" layoutY="26.0" prefHeight="25.0" prefWidth="212.0" text="Login" textFill="#706e6e">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <MFXPasswordField fx:id="loginPassword" alignment="TOP_LEFT" borderGap="15.0" floatMode="BORDER" layoutX="184.0" layoutY="154.0" prefHeight="38.0" prefWidth="345.0" promptText="Enter Password" style="-fx-background-radius: 10;" />
+            <MFXTextField fx:id="loginUsername" floatMode="ABOVE" layoutX="184.0" layoutY="82.0" prefHeight="38.0" prefWidth="345.0" promptText="Enter Your Username" style="-fx-border-radius: 10;" />
+            <MFXButton fx:id="loginLoginbutton" layoutX="219.0" layoutY="228.0" prefHeight="38.0" prefWidth="268.0" style="-fx-background-color: #424242;" text="Login" textFill="#fdfeff" />
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="206.0" layoutY="28.0" prefHeight="50.0" prefWidth="255.0" text="2DO" textFill="#fcfcfc">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <MFXButton fx:id="loginSignupButton" layoutX="562.0" layoutY="15.0" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: #d50000;" text="Sign Up" textFill="#fdfeff" />
+   </children>
+</AnchorPane>

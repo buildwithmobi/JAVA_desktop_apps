@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="418.0" prefWidth="572.0" style="-fx-background-color: #2D3250;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.letsbuildlogin.HelloController">
+   <children>
+      <Label alignment="CENTER" layoutX="149.0" layoutY="90.0" prefHeight="71.0" prefWidth="286.0" text="Login" textFill="#f8f8f8">
+         <font>
+            <Font size="36.0" />
+         </font></Label>
+      <TextField fx:id="LoginUserName" layoutX="168.0" layoutY="169.0" prefHeight="26.0" prefWidth="307.0" promptText="Enter your User Name" style="-fx-background-color: #7077A1;">
+         <cursor>
+            <Cursor fx:constant="SE_RESIZE" />
+         </cursor>
+         <effect>
+            <Glow />
+         </effect>
+      </TextField>
+      <Button fx:id="LoginButton" layoutX="164.0" layoutY="301.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="320.0" style="-fx-background-color: #F6B17A; -fx-background-radius: 5;" text="Login">
+         <cursor>
+            <Cursor fx:constant="WAIT" />
+         </cursor>
+      </Button>
+      <PasswordField fx:id="LoginPassword" layoutX="168.0" layoutY="235.0" prefHeight="26.0" prefWidth="307.0" promptText="Enter Your Password" style="-fx-background-color: #7077A1;">
+         <effect>
+            <Glow />
+         </effect>
+      </PasswordField>
+      <ImageView fitHeight="80.0" fitWidth="128.0" layoutX="258.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:///C:/Users/ADMIN/IdeaProjects/letsBuildLogin/src/main/java/org/example/letsbuildlogin/assets/javaIcon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="43.0" fitWidth="65.0" layoutX="90.0" layoutY="161.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:///C:/Users/ADMIN/IdeaProjects/letsBuildLogin/src/main/java/org/example/letsbuildlogin/assets/icons8-name-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="33.0" fitWidth="43.0" layoutX="94.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:///C:/Users/ADMIN/IdeaProjects/letsBuildLogin/src/main/java/org/example/letsbuildlogin/assets/icons8-password.gif" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DISAPPEAR" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

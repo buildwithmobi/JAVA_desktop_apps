@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import io.github.palexdev.materialfx.controls.MFXCheckbox?>
+<?import io.github.palexdev.materialfx.controls.MFXPasswordField?>
+<?import io.github.palexdev.materialfx.controls.MFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="459.0" prefWidth="602.0" style="-fx-background-color: #ff1744;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.todoapp.Controller.SignUpController">
+   <children>
+      <AnchorPane layoutY="89.0" prefHeight="372.0" prefWidth="602.0" style="-fx-background-color: #FDFEFF;">
+         <children>
+            <MFXTextField fx:id="SignUpFirstName" floatMode="DISABLED" layoutX="121.0" layoutY="42.0" prefHeight="35.0" prefWidth="358.0" promptText="First Name" />
+            <MFXTextField fx:id="SignUpLastName" floatMode="DISABLED" layoutX="121.0" layoutY="85.0" prefHeight="35.0" prefWidth="358.0" promptText="Last Name" />
+            <MFXTextField fx:id="SignUpUserName" floatMode="DISABLED" layoutX="121.0" layoutY="128.0" prefHeight="35.0" prefWidth="358.0" promptText="User Name" />
+            <MFXTextField fx:id="SignUpLocation" floatMode="DISABLED" layoutX="121.0" layoutY="261.0" prefHeight="35.0" prefWidth="358.0" promptText="First Name" text="Location" />
+            <MFXCheckbox fx:id="SignUpCheckBoxMale" indeterminate="true" layoutX="230.0" layoutY="230.0" prefHeight="23.0" prefWidth="71.0" style="-fx-background-color: #ff8a80;" text="Male">
+               <effect>
+                  <Glow />
+               </effect>
+            </MFXCheckbox>
+            <MFXCheckbox fx:id="SignUpCheckBoxFemale" cache="true" cacheHint="QUALITY" indeterminate="true" layoutX="348.0" layoutY="230.0" prefHeight="23.0" prefWidth="82.0" style="-fx-background-color: #ff8a80;" text="Female">
+               <effect>
+                  <Glow />
+               </effect>
+            </MFXCheckbox>
+            <MFXPasswordField fx:id="SignUpPassword" floatMode="DISABLED" layoutX="121.0" layoutY="175.0" prefHeight="35.0" prefWidth="358.0" promptText="Enter Your Password">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </MFXPasswordField>
+            <MFXButton fx:id="SignUpButton" layoutX="179.0" layoutY="314.0" prefHeight="36.0" prefWidth="245.0" style="-fx-background-color: #424242;" text="Sign Up" textFill="#fdfeff" />
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="218.0" layoutY="37.0" prefHeight="35.0" prefWidth="165.0" text="2DO" textFill="#fdfeff">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
